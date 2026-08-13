@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato Comercial & Parcerias | Konda Tech</title>
+    <meta name="description" content="Entre em contato com a equipe da Konda Tech para orçamentos, projetos corporativos, parcerias ou imprensa.">
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/layout.css">
+    <link rel="stylesheet" href="../css/components.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+<body>
+
+    <!-- HEADER / NAVBAR -->
+    <header class="header">
+        <div class="container header-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">KT</div>
+                <div class="logo-text">KONDA <span>TECH</span></div>
+            </a>
+
+            <nav class="nav-desktop">
+                <a href="../index.html" class="nav-link">Início</a>
+                <a href="sobre.html" class="nav-link">Sobre</a>
+                <a href="servicos.html" class="nav-link">Serviços</a>
+                <a href="projetos.html" class="nav-link">Projetos</a>
+                <a href="produtos.html" class="nav-link">Produtos</a>
+                <a href="equipe.html" class="nav-link">Equipe</a>
+                <a href="blog.html" class="nav-link">Blog</a>
+                <a href="roadmap.html" class="nav-link">Roadmap</a>
+                <a href="contato.html" class="nav-link active">Contato</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="theme-toggle-btn btn btn-icon btn-secondary" aria-label="Alternar tema"></button>
+                <a href="roadmap.html#apoiar" class="btn btn-primary" style="display: inline-flex;">Apoiar Konda</a>
+                <button class="hamburger-btn" aria-label="Abrir menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/></svg></button>
+            </div>
+        </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="drawer-overlay"></div>
+    <aside class="nav-drawer" aria-label="Menu Mobile">
+        <div class="drawer-header">
+            <div class="logo">
+                <div class="logo-icon">KT</div>
+                <div class="logo-text">KONDA <span>TECH</span></div>
+            </div>
+            <button class="drawer-close-btn"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg></button>
+        </div>
+        <nav class="drawer-nav">
+            <a href="../index.html" class="drawer-link">Início</a>
+            <a href="sobre.html" class="drawer-link">Sobre</a>
+            <a href="servicos.html" class="drawer-link">Serviços</a>
+            <a href="projetos.html" class="drawer-link">Projetos</a>
+            <a href="produtos.html" class="drawer-link">Produtos</a>
+            <a href="equipe.html" class="drawer-link">Equipe</a>
+            <a href="blog.html" class="drawer-link">Blog</a>
+            <a href="roadmap.html" class="drawer-link">Roadmap</a>
+            <a href="suporte.html" class="drawer-link">Suporte</a>
+            <a href="contato.html" class="drawer-link active">Contato</a>
+        </nav>
+        <div class="drawer-footer">
+            <a href="roadmap.html#apoiar" class="btn btn-primary" style="width: 100%;">Apoiar Konda Tech</a>
+        </div>
+    </aside>
+
+    <!-- PAGE HERO -->
+    <section class="section" style="padding-top: calc(var(--header-height) + 3rem);">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag">Fale Conosco</span>
+                <h1 class="section-title">Entre em Contato</h1>
+                <p class="section-subtitle">
+                    Quer desenvolver um software sob medida, fechar uma parceria comercial ou tirar dúvidas sobre o ecossistema Konda Tech? Envie sua mensagem.
+                </p>
+            </div>
+
+            <div class="grid-2 reveal">
+                <!-- CONTACT FORM -->
+                <div class="card" style="padding: 2.5rem;">
+                    <h2 style="font-size: var(--fs-xl); margin-bottom: 1.5rem;">Formulário de Mensagem</h2>
+
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label class="form-label" for="contact-name">Seu Nome Completo *</label>
+                            <input type="text" id="contact-name" class="form-control" placeholder="Ex: Alexandre Konda" required />
+                            <span class="form-error"></span>
+                        </div>
+
+                        <div class="grid-2">
+                            <div class="form-group">
+                                <label class="form-label" for="contact-email">Seu E-mail *</label>
+                                <input type="email" id="contact-email" class="form-control" placeholder="nome@empresa.com" required />
+                                <span class="form-error"></span>
+                            </div>
+
+                            <div class="form-group">
+                                <label class="form-label" for="contact-company">Empresa / Projeto</label>
+                                <input type="text" id="contact-company" class="form-control" placeholder="Opcional" />
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="contact-subject">Assunto Principal</label>
+                            <select id="contact-subject" class="form-control">
+                                <option value="orcamento">Desenvolvimento de Software / Orçamento</option>
+                                <option value="silvia">Parceria com SILVIA IA</option>
+                                <option value="aetheria">Aetheria Craft / Imprensa Games</option>
+                                <option value="freelas">Konda Freelas / Parceria de Marketplace</option>
+                                <option value="geral">Outros Assuntos</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="form-label" for="contact-message">Sua Mensagem *</label>
+                            <textarea id="contact-message" class="form-control" rows="5" placeholder="Conte-nos mais sobre a sua ideia ou necessidade..." required></textarea>
+                            <span class="form-error"></span>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+
+                <!-- DIRECT INFO -->
+                <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div class="card" style="padding: 2rem;">
+                        <h3 style="font-size: var(--fs-lg); margin-bottom: 1rem;">Canais Diretos</h3>
+                        <p style="font-size: var(--fs-sm); color: var(--color-text-muted); margin-bottom: 1.5rem;">
+                            Nossa equipe técnica atende demandas corporativas e consultas de imprensa de forma ágil.
+                        </p>
+
+                        <div style="display: flex; flex-direction: column; gap: 1rem; font-size: var(--fs-sm);">
+                            <div>
+                                <strong style="display: block; color: var(--color-accent);">E-mail Comercial:</strong>
+                                <span>contato@kondatech.dev</span>
+                            </div>
+                            <div>
+                                <strong style="display: block; color: var(--color-accent);">Atendimento ao Desenvolvedor:</strong>
+                                <span>dev@kondatech.dev</span>
+                            </div>
+                            <div>
+                                <strong style="display: block; color: var(--color-accent);">Horário de Funcionamento:</strong>
+                                <span>Segunda a Sexta, das 09:00 às 18:00 (BRT)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card" style="padding: 2rem; background: linear-gradient(135deg, var(--color-surface), var(--color-bg-secondary));">
+                        <h3 style="font-size: var(--fs-lg); margin-bottom: 0.75rem;">Preparado para Backend Futuro</h3>
+                        <p style="font-size: var(--fs-xs); color: var(--color-text-muted); line-height: 1.6;">
+                            Este formulário conta com validação reativa no cliente via JavaScript ES6 puro e estrutura modular adaptável para ser conectada diretamente a endpoints de API RESTful, GraphQL ou Webhooks em etapas posteriores.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="../index.html" class="logo">
+                        <div class="logo-icon">KT</div>
+                        <div class="logo-text">KONDA <span>TECH</span></div>
+                    </a>
+                    <p class="footer-desc">Aguardamos seu contato para transformarmos ideias em tecnologia.</p>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Navegação</h4>
+                    <div class="footer-links">
+                        <a href="../index.html" class="footer-link">Início</a>
+                        <a href="sobre.html" class="footer-link">Sobre</a>
+                        <a href="servicos.html" class="footer-link">Serviços</a>
+                        <a href="projetos.html" class="footer-link">Projetos</a>
+                        <a href="produtos.html" class="footer-link">Produtos</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Atendimento</h4>
+                    <div class="footer-links">
+                        <a href="contato.html" class="footer-link">Formulário Direct</a>
+                        <a href="suporte.html" class="footer-link">Central de Suporte</a>
+                    </div>
+                </div>
+
+                <div>
+                    <h4 class="footer-title">Comunidade</h4>
+                    <div class="footer-links">
+                        <a href="roadmap.html#apoiar" class="footer-link">Apoiar Konda</a>
+                        <a href="blog.html" class="footer-link">Blog & Notícias</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div>&copy; 2026 Konda Tech. Todos os direitos reservados.</div>
+                <div>Formulários validados no cliente e prontos para integração.</div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+</html>
