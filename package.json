@@ -1,0 +1,16 @@
+{
+  "name": "konda-tech-ecosystem",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Site oficial da Konda Tech - Startup tecnológica em IA, jogos, SaaS e ecossistema digital",
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "build": "vite build",
+    "preview": "vite preview",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "vite": "^6.2.3"
+  }
+}
