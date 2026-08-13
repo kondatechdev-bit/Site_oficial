@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 60" width="220" height="60">
+  <defs>
+    <linearGradient id="aetheria-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#10b981"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+  </defs>
+  <polygon points="25,10 40,20 40,40 25,50 10,40 10,20" fill="url(#aetheria-grad)"/>
+  <polygon points="25,10 40,20 25,30 10,20" fill="#ffffff" opacity="0.3"/>
+  <text x="52" y="35" font-family="system-ui, sans-serif" font-weight="800" font-size="18" fill="#f8fafc">AETHERIA</text>
+  <text x="150" y="35" font-family="system-ui, sans-serif" font-weight="600" font-size="18" fill="#10b981">CRAFT</text>
+</svg>
